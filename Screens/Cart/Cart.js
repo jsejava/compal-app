@@ -14,6 +14,7 @@ import CartItem from "./CartItem";
 import { SwipeListView } from "react-native-swipe-list-view";
 import EasyButton from "../Shared/StyledComponents/EasyButton";
 import AuthGlobal from "../../Context/store/AuthGlobal";
+import Login from "../User/Login";
 
 var { height, width } = Dimensions.get("window");
 
@@ -73,7 +74,7 @@ const Cart = (props) => {
                 <EasyButton
                   secondary
                   medium
-                  onPress={() => props.navigation.navigate("Login")}
+                  onPress={() => props.navigation.navigate("LoginfromCart")}
                 >
                   <Text style={styles.textStyle}>Login</Text>
                 </EasyButton>

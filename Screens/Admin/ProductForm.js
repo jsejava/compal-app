@@ -88,8 +88,8 @@ const ProductForm = (props) => {
     });
 
     if (!result.canceled) {
-      setMainImage(result.uri);
-      setImage(result.uri);
+      setMainImage(result.assets[0].uri);
+      setImage(result.assets[0].uri);
     }
   };
 

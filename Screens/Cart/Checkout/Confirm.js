@@ -72,7 +72,7 @@ const Confirm = (props) => {
             <Text style={styles.title}>Items</Text>
             {finalOrder.order.order.orderItems.map((x) => {
               return (
-                <ListItem style={styles.ListItem} key={x.product.name} avatar>
+                <ListItem style={styles.ListItem} key={x.product._id} avatar>
                   <Left>
                     <Thumbnail source={{ uri: x.product.image }} />
                   </Left>
